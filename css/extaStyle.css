@@ -1,0 +1,62 @@
+/* WAVES */
+
+.services-section {
+
+    z-index: 199;
+    background: none;
+}
+
+.service-wave {
+    position: absolute;
+    /* top: -100px; */
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    /* height: 100%; */
+    z-index: 0;
+    /* margin-top: 70px; */
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%' stop-color='%23ac4495' /%3E%3Cstop offset='70%' stop-color='%23284283' /%3E%3Cstop offset='100%' stop-color='%233b5aa0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23grad)' fill-opacity='1' d='M0,64L60,64C120,64,240,64,360,101.3C480,139,600,213,720,208C840,203,960,117,1080,117.3C1200,117,1320,203,1380,245.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z' /%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: linear-gradient(135deg, #ac4495 0%, #284283 50%, #3b5aa0 100%); */
+
+}
+
+.services-grid {
+    z-index: 99;
+}
+
+.client-wave {
+    position: absolute;
+    /* top: -100px; */
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    /* height: 100%; */
+    z-index: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ac4495' /%3E%3Cstop offset='50%25' stop-color='%23284283' /%3E%3Cstop offset='100%25' stop-color='%233b5aa0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23grad)' fill-opacity='1' d='M0,64L80,85.3C160,107,320,149,480,138.7C640,128,800,64,960,74.7C1120,85,1280,171,1360,213.3L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.project-wave {
+    position: absolute;
+    /* top: -100px; */
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    /* height: 100%; */
+    z-index: 0;
+    /* margin-top: 70px; */
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%' stop-color='%23ac4495' /%3E%3Cstop offset='70%' stop-color='%23284283' /%3E%3Cstop offset='100%' stop-color='%233b5aa0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23grad)' fill-opacity='1' d='M0,64L60,64C120,64,240,64,360,101.3C480,139,600,213,720,208C840,203,960,117,1080,117.3C1200,117,1320,203,1380,245.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z' /%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+                       
+    
+    /* background-color: linear-gradient(135deg, #ac4495 0%, #284283 50%, #3b5aa0 100%); */
+
+}

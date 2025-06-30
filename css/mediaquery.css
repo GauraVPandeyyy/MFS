@@ -1,0 +1,358 @@
+/* Mobile Styles */
+@media (max-width: 991.98px) {
+    .navbar {
+        margin: 0 10px;
+        border-radius: 0 0 20px 20px !important;
+    }
+
+    .navbar.scrolled {
+        margin: 0 5px;
+        border-radius: 0 0 15px 15px !important;
+    }
+
+    .navbar-collapse {
+
+        transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        /* min-width: 100%; */
+        /* background: var(--glass-bg); */
+        border-radius: 20px 20px 0 0;
+        margin-top: 5px;
+        /* background: linear-gradient(135deg, #647ade 0%, #5991b4ea 100%); */
+        background: linear-gradient(135deg, #ac4495, #284283);
+
+        /* background: linear-gradient(135deg, #647ade 0%, #4b81a2f5 100% ); */
+        /* background: var(--gradient-1); */
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+        overflow: hidden;
+
+        max-height: 0;
+        opacity: 0;
+
+        z-index: 999;
+        transition:
+            max-height 0.1s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1),
+            padding 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navbar-collapse.show {
+        max-height: 600px;
+        opacity: 1;
+        padding: 1.5rem 2rem;
+        transition:
+            max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            padding 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .nav-link {
+        margin: 0.2rem 0;
+        text-align: start;
+    }
+
+    .btn-primary {
+        width: 100%;
+        margin-top: 1rem !important;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .tech-stats-home {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .stat-card-home {
+        width: 100px;
+        padding: 15px;
+    }
+
+    .stat-number-home {
+        font-size: 1.5rem;
+    }
+
+
+    
+
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+
+    .main-section {
+        padding: 0;
+    }
+
+    .tech-stats-home {
+        display: none;
+    }
+
+
+
+    .swiper-slide {
+        width: 250px;
+    }
+
+    .navbar.scrolled .navbar-brand {
+        font-size: 1.2rem;
+
+    }
+
+    .navbar-brand {
+
+        font-size: 1.4rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .btn-glow {
+        font-size: 1rem;
+        padding: 14px 28px;
+    }
+
+    .glass-card {
+        padding: 2rem !important;
+    }
+
+    .tech-stats-home {
+        gap: 10px;
+    }
+
+    .stat-card-home {
+        width: 80px;
+        padding: 10px;
+    }
+
+    /* service */
+    .services-section {
+        /* padding: 10px 0; */
+        margin-top: 0px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .stats-bar {
+        position: static;
+        transform: none;
+        justify-content: center;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+
+
+    .client-project {
+        font-size: 2.5rem;
+    }
+
+    .logo-track img {
+        /* width: 100px; */
+        height: 100px;
+        margin: 0 20px;
+        border-radius: 30%;
+    }
+
+    .logo-track {
+        width: calc(140px * 14);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-140px * 7));
+        }
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    #clients {
+        padding: 60px 0;
+    }
+
+    /* CEO section */
+    .ceo-section {
+        padding: 80px 0px;
+    }
+
+    .ceo-container {
+        margin: 0 15px;
+        border-radius: 24px;
+    }
+
+    .photo-section {
+        padding: 40px 1px;
+        text-align: center;
+    }
+
+    .photo-main {
+        width: 280px;
+        height: 350px;
+    }
+
+    .content-section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .welcome-title {
+        font-size: 2.2rem;
+    }
+
+    .ceo-info {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .stats-mini {
+        justify-content: center;
+    }
+
+    .quote-decoration {
+        display: none;
+    }
+
+    /* contact */
+
+    .contact-section {
+        margin-top: -100px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        /* color: red !important; */
+        /* background: var(--gradient-3); */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+.client-project{
+   font-size: 2.5rem;
+}
+    .contact-card {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+ 
+
+    .floating-contact {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+  
+    /* extra */
+
+
+}
+
+
+
+
+
+/* Responsive Design */
+
+@media (max-width: 576px) {
+    .client-project {
+        font-size: 2rem;
+    }
+
+    .logo-track img {
+        width: 90px;
+        /* height: 50px; */
+        margin: 0 15px;
+    }
+
+    .logo-track {
+        width: calc(110px * 14);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-110px * 7));
+        }
+    }
+
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-card {
+        margin: 0 10px;
+    }
+
+    .photo-main {
+        width: 240px;
+        height: 300px;
+    }
+
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+
+    /* .content-section {
+        padding: 30px 20px;
+    } */
+}
