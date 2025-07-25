@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="./assets/mfs-logo.jpg" />
+  <title>Meta Future Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- link swiper js-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
+  <link rel="stylesheet" href="css/extaStyle.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+
+  <div class="main-section">
+
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/saloni.png" alt="">
+        </a>
+
+        <!-- Navbar toggler -->
+        <button class="navbar-toggler" type="button" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered fs-3"></i>
+        </button>
+
+        <!-- Collapsible navbar content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"><i class="fas fa-cogs me-1"></i>Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clients"><i class="fas fa-info-circle me-1"></i>Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"><i class="fas fa-project-diagram me-1"></i>Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="career.html"><i class="fa-solid fa-user-tie me-1"></i>Career</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary ms-lg-3 mt-2 mt-lg-0">
+            <i class="fas fa-quote-right me-2"></i>Get a Quote
+          </a>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <!-- home -->
+    <section class="hero-section d-flex align-items-center position-relative" id="home">
+      <!-- Floating Orbs -->
+      <div class="floating-orb orb-1"></div>
+      <div class="floating-orb orb-2"></div>
+      <div class="floating-orb orb-3"></div>
+
+      <!-- Particles -->
+      <div class="particles" id="particles"></div>
+
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-6">
+            <div class="hero-text glass-card rounded-4" data-aos="fade-up" data-aos-duration="1000">
+              <h1 class="display-5 fw-bold mb-3">
+                Scalable IT Solutions<br />
+                <span class="gradient-text display-4">for Modern Businesses</span>
+              </h1>
+              <p class="lead mb-3" data-aos="fade-up" data-aos-delay="0">
+                Web development, cloud architecture, and digital acceleration—delivered with precision and innovation.
+              </p>
+              <div data-aos="fade-up" data-aos-delay="0">
+                <a href="#contact" class="btn btn-lg btn-glow">
+                  <i class="fas fa-rocket me-2"></i>Get Free Consultation
+                </a>
+              </div>
+
+              <!-- Trust Indicators -->
+              <div class="d-flex align-items-center justify-content-between mt-4" data-aos="fade-up" data-aos-delay="200">
+                <!-- <div>
+                  <a href="#contact" class="btn btn-lg btn-glow">
+                    <i class="fas fa-rocket me-2"></i>Get Free Consultation
+                  </a>
+                </div> -->
+                <div class="me-4">
+                  <div class="d-flex text-warning mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                  <small class="text-light opacity-75">4.5 from 50+ clients</small>
+                </div>
+                <!-- <div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-shield-alt text-success me-2"></i>
+                    <small class="text-light opacity-75">ISO 27001 Certified</small>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+            <div class="hero-img-wrapper position-relative">
+              
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Modern IT Solutions" class="hero-img img-fluid rounded-4">
+              <div class="floating-shape"></div>
+
+              <!-- Tech Stack Icons -->
+              <div class="position-absolute" style="top: 20%; left: -10%; z-index: 10;">
+                <div class="glass-card p-3 rounded-circle" data-aos="zoom-in" data-aos-delay="600">
+                  <i class="fab fa-react text-info" style="font-size: 1.5rem;"></i>
+                </div>
+              </div>
+              <div class="position-absolute" style="bottom: 30%; right: -10%; z-index: 10;">
+                <div class="glass-card p-3 rounded-circle" data-aos="zoom-in" data-aos-delay="600">
+                  <i class="fab fa-aws text-warning" style="font-size: 1.5rem;"></i>
+                </div>
+              </div>
+              <div class="position-absolute" style="top: 60%; left: -5%; z-index: 10;">
+                <div class="glass-card p-3 rounded-circle" data-aos="zoom-in" data-aos-delay="600">
+                  <i class="fab fa-docker text-primary" style="font-size: 1.5rem;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stats - Desktop Only -->
+      <div class="tech-stats-home flex-none d-md-flex flex-md-column position-absolute object-fit-contain">
+        <div class="stat-card-home" data-aos="fade-left" data-aos-delay="200" data-aos-duration="200">
+          <div class="stat-number-home" data-count="100">0+</div>
+          <div class="stat-label-home">Projects</div>
+        </div>
+        <div class="stat-card-home" data-aos="fade-left" data-aos-delay="100" data-aos-duration="200">
+          <div class="stat-number-home" data-count="99">0</div>
+          <div class="stat-label-home">% Uptime</div>
+        </div>
+        <div class="stat-card-home" data-aos="fade-left" data-aos-delay="100">
+          <div class="stat-number-home" data-count="24">0</div>
+          <div class="stat-label-home">/ 7 Support</div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-down" data-aos="fade-up" data-aos-delay="600">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+      <div class="service-wave d-none d-md-flex" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800"></div>
+      <!-- <div class="service-wave2" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"></div> -->
+      <!-- Floating Background Shapes -->
+      <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <!-- <div class="shape"></div> -->
+      </div>
+
+      <div class="container">
+
+        <div class="section-header u-flex-center u-mb-2" data-aos="fade-up" data-aos-delay="100"
+          data-aos-duration="1000">
+          <h2 class="section-title u-gradient-text">Our Core Services</h2>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+          <!-- Service 1: Web Development -->
+          <div class="service-card u-glass u-shadow" data-service="web" data-aos="fade-up" data-aos-delay="100"
+            data-aos-duration="600">
+            <div class="service-icon">
+              <i class="bi bi-window-stack"></i>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-description">Responsive and scalable websites built with modern tech stacks, optimized for
+              performance and user experience.</p>
+          </div>
+
+          <!-- Service 3: Mobile App Development -->
+          <div class="service-card" data-service="mobile" data-aos="fade-up" data-aos-delay="100"
+            data-aos-duration="600">
+            <div class="service-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h3 class="service-title">Mobile App Development</h3>
+            <p class="service-description">Cross-platform mobile applications focused on exceptional performance,
+              intuitive UX, and seamless integration.</p>
+          </div>
+
+          <!-- Service 4: IT Consulting -->
+          <div class="service-card" data-service="consulting" data-aos="fade-up" data-aos-delay="100"
+            data-aos-duration="600">
+            <div class="service-icon">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <h3 class="service-title">IT Consulting</h3>
+            <p class="service-description">Strategic advisory services to upgrade, scale, and secure your systems with
+              data-driven insights and best practices.</p>
+          </div>
+
+          <!-- Service 5:Game Development -->
+          <div class="service-card" data-service="Game development" data-aos="fade-up" data-aos-delay="100"
+            data-aos-duration="600">
+            <div class="service-icon">
+              <i class="bi bi-controller"></i>
+            </div>
+            <h3 class="service-title">Game Development</h3>
+            <p class="service-description">Designing immersive and interactive gaming experiences across mobile and web
+              platforms.</p>
+          </div>
+
+          <!-- Service 6: Software Development -->
+          <div class="service-card" data-service="software-development" data-aos="fade-up" data-aos-delay="100"
+            data-aos-duration="600">
+            <div class="service-icon">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <h3 class="service-title">Software Development</h3>
+            <p class="service-description">Custom software solutions to automate, optimize, and transform your business
+              processes.</p>
+          </div>
+
+
+          <!-- Service 2: Cloud Deployment -->
+          <div class="service-card" data-service="cloud" data-aos="fade-up" data-aos-delay="100"
+            data-aos-duration="600">
+            <div class="service-icon">
+              <i class="bi bi-cloud-check"></i>
+            </div>
+            <h3 class="service-title">Cloud Deployment</h3>
+            <p class="service-description">Deploy secure, fast, and cost-efficient cloud infrastructure with automated
+              scaling and monitoring.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <!-- our latest client -->
+    <section class="py-5" id="clients">
+      <div class="client-wave d-none d-md-flex" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"></div>
+
+      <!-- Floating Elements -->
+      <div class="floating-element floating-element-1"></div>
+      <div class="floating-element floating-element-2"></div>
+      <!-- <div class="floating-element floating-element-3"></div> -->
+      <div class="floating-element floating-element-4"></div>
+
+      <!-- Testimonial Quotes -->
+      <div class="testimonial-quote quote-1">"</div>
+      <div class="testimonial-quote quote-2">"</div>
+
+      <div class="container clients-container">
+
+        <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+          <h2 class="client-project">Trusted by Industry Leaders</h2>
+          <p class="section-subtitle">Partnering with innovative companies to deliver exceptional IT solutions</p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+          <div class="logo-slider" id="logoSlider">
+
+            <div class="logo-track" id="logoTrack">
+              <!-- First set of logos -->
+              <img src="./assets/logo02.png" alt="Tech Corp" style="animation-delay: 0.1s">
+              <img src="./assets/logo03.png" alt="Innovate Inc" style="animation-delay: 0.2s">
+              <img src="./assets/logo04.png" alt="Digital Solutions" style="animation-delay: 0.3s">
+              <img src="./assets/logo05.png" alt="Cloud Systems" style="animation-delay: 0.4s">
+              <img src="./assets/logo06.png" alt="Data Dynamics" style="animation-delay: 0.5s">
+              <img src="./assets/logo07.png" alt="Smart Enterprise" style="animation-delay: 0.6s">
+              <img src="./assets/logo08.png" alt="Future Tech" style="animation-delay: 0.7s">
+
+              <!-- Duplicate set for smooth infinite scroll -->
+              <img src="./assets/logo02.png" alt="Tech Corp" style="animation-delay: 0.9s">
+              <img src="./assets/logo03.png" alt="Innovate Inc" style="animation-delay: 1.0s">
+              <img src="./assets/logo04.png" alt="Digital Solutions" style="animation-delay: 1.1s">
+              <img src="./assets/logo05.png" alt="Cloud Systems" style="animation-delay: 1.2s">
+              <img src="./assets/logo06.png" alt="Data Dynamics" style="animation-delay: 1.3">
+              <img src="./assets/logo07.png" alt="Smart Enterprise" style="animation-delay: 1.4s">
+              <img src="./assets/logo08.png" alt="Future Tech" style="animation-delay: 1.5s">
+             
+             
+              <img src="./assets/logo02.png" alt="Tech Corp" style="animation-delay: 1.6s">
+              <img src="./assets/logo03.png" alt="Innovate Inc" style="animation-delay: 1.7s">
+              <img src="./assets/logo04.png" alt="Digital Solutions" style="animation-delay: 1.8s">
+              <img src="./assets/logo05.png" alt="Cloud Systems" style="animation-delay: 1.9s">
+              <img src="./assets/logo06.png" alt="Data Dynamics" style="animation-delay: 2.0s">
+              <img src="./assets/logo07.png" alt="Smart Enterprise" style="animation-delay: 2.1s">
+              <img src="./assets/logo08.png" alt="Future Tech" style="animation-delay: 2.2s">
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <div class="stat-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="400">
+                <div class="stat-number" data-count="90">0+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="200">
+                <div class="stat-number" data-count="100">0+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="200">
+                <div class="stat-number" data-count="30">0+</div>
+                <div class="stat-label">Team Members</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="5">
+                <div class="stat-number" data-count="7">0+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our Projects -->
+
+    <section class="py-5 mt-4 position-relative" id="projects">
+      <div class="project-wave d-none d-md-flex" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000"></div>
+
+      <div class="container">
+        <div class="text-center mb-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+          <h2 class="client-project">See Our Work. <br>Imagine Yours.</h2>
+        </div>
+
+
+
+        <div class="row" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/thumb1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/thumb3.jpg" />
+              </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CEO SECTION -->
+
+    <section class="ceo-section">
+      <!-- Floating Background Elements -->
+      <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+      </div>
+
+      <div class="container">
+        <div class="ceo-container">
+          <div class="row g-0">
+            <!-- Photo Section -->
+            <div class="col-lg-5">
+              <div class="photo-section">
+                <div class="photo-container">
+                  <img src="./assets/ceo.jpg" alt="CEO Rahul yadav" class="photo-main">
+                  <!-- <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                    alt="CEO Rahul yadav" class="photo-main"> -->
+                  <div class="photo-decoration"></div>
+                  <div class="photo-decoration"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="col-lg-7">
+              <div class="content-section">
+                <!-- Quote Decoration -->
+                <div class="quote-decoration">"</div>
+
+                <!-- Section Badge -->
+                <div class="section-badge text-center">
+                  <i class="bi bi-chat-heart"></i>
+                  Leadership Message
+                </div>
+
+                <!-- Welcome Title -->
+                <h1 class="welcome-title">
+                  Welcome to the Future of
+                  <span class="highlight">Innovation</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <h4 class="welcome-subtitle">A Personal Message from Our CEO</h4>
+
+                <!-- Welcome Message -->
+                <p class="welcome-message text-start">
+                  At our core, we believe technology should empower, not complicate. Every solution we craft is driven
+                  by a passion for excellence and a commitment to transforming how businesses operate in the digital
+                  age. Our journey began with a simple vision: to bridge the gap between cutting-edge technology and
+                  real-world business needs.
+                </p>
+
+
+                <!-- CEO Info -->
+                <div class="ceo-info pt-0 mt-0">
+                  <div class="ceo-avatar">MFS</div>
+                  <div class="ceo-details">
+                    <h4>Rahul Yadav</h4>
+                    <p>CEO & Founder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Ready to transform your business with cutting-edge technology? Let's discuss your project and bring your
+            vision to life.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Contact Form -->
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-card">
+              <h3 class="mb-4" style="color: var(--text-dark); font-weight: 600;">
+                <i class="fas fa-paper-plane me-2" style="color: var(--primary-color);"></i>
+                Send us a Message
+              </h3>
+
+              <div class="form-status success" id="successMessage">
+                <i class="fas fa-check-circle"></i>
+                <span></span>
+              </div>
+
+              <div class="form-status error" id="errorMessage">
+                <i class="fas fa-exclamation-circle"></i>
+                <span></span>
+              </div>
+
+              <form class="contact-form" id="contactForm">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="fas fa-user me-1"></i>Full Name *
+                      </label>
+                      <input type="text" class="form-control" name="full_name" placeholder="Enter Full Name">
+                      <span class="text-danger" style="font-size: 14px; font-weight : semibold;"
+                        id="full_nameError"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="fas fa-envelope me-1"></i>Email Address *
+                      </label>
+                      <input type="email" class="form-control" name="email"
+                        placeholder="metafutureservices666@gmail.com">
+                      <span class="text-danger" style="font-size: 14px; font-weight : semibold;" id="emailError"></span>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="fas fa-phone me-1"></i>Phone Number *
+                      </label>
+                      <input type="tel" class="form-control" name="phone" placeholder="8957466548">
+                      <span class="text-danger" style="font-size: 14px; font-weight : semibold;" id="phoneError"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="fas fa-building me-1"></i>Company Name
+                      </label>
+                      <input type="text" class="form-control" name="company_name" placeholder="Your Company">
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4 form-group">
+                    <label class="form-label">
+                      <i class="fas fa-cogs me-1"></i>Service Interested In
+                    </label>
+                    <select class="form-select" name="service_interested_in">
+                      <option value="">Select a service</option>
+                      <option value="web-development">Web Development</option>
+                      <option value="mobile-apps">Mobile App Development</option>
+                      <option value="game-Development">Game Development</option>
+                      <option value="software-development">Software Development</option>
+                      <option value="cloud-solutions">Cloud Solutions</option>
+                      <option value="tech-support">Technical Support</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 form-group">
+                    <label class="form-label">
+                      <i class="fa-solid fa-indian-rupee-sign me-1"></i>Project Budget
+                    </label>
+                    <select class="form-select" name="project_budget">
+                      <option value="">Select budget range</option>
+                      <option value="under-5k">Under ₹15,000</option>
+                      <option value="5k-10k">₹15,000 - ₹25,000</option>
+                      <option value="10k-25k">₹25,000 - ₹35,000</option>
+                      <option value="25k-50k">₹35,000 - ₹50,000</option>
+                      <option value="50k-plus">₹50,000+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label class="form-label">
+                      <i class="fas fa-comment-dots me-1"></i>Message *
+                    </label>
+                    <textarea class="form-control" name="message"
+                      placeholder="Tell us about your project requirements, timeline, and any specific needs..."></textarea>
+                    <span class="text-danger" style="font-size: 14px; font-weight : semibold;" id="messageError"></span>
+                  </div>
+
+                  <div class="col-md-6 align-self-center">
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                      <i class="fas fa-paper-plane me-2"></i>
+                      <span>Send Message</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row mt-5 row-gap-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-4 text-center">
+            <div class="contact-card">
+              <div class="contact-info-icon mx-auto mb-3">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h5 class="contact-info-title">Business Hours</h5>
+              <p class="contact-info-text">
+                Mon - Fri: 9:00 AM - 6:00 PM<br>
+                Sat: 10:00 AM - 4:00 PM<br>
+                Sun: Closed
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="contact-card">
+              <div class="contact-info-icon mx-auto mb-3">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h5 class="contact-info-title">24/7 Support</h5>
+              <p class="contact-info-text">
+                Emergency technical support<br>
+                available around the clock<br>
+                for premium clients
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="contact-card">
+              <div class="contact-info-icon mx-auto mb-3">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h5 class="contact-info-title">Quick Response</h5>
+              <p class="contact-info-text">
+                We respond to all inquiries<br>
+                within 2 hours during<br>
+                business hours
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="floating-contact" title="Contact Us">
+      <i class="fas fa-comments"></i>
+    </a>
+
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch('./components/footer.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+    </script>
+
+  </div>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // SWIPER JS
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Contact form api handling 
+      const form = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+
+      // Clear all error messages
+      function clearErrors() {
+        const errorFields = ["full_name", "email", "phone", "message"];
+        errorFields.forEach(field => {
+          const errorSpan = document.getElementById(`${field}Error`);
+          if (errorSpan) errorSpan.textContent = "";
+        });
+      }
+
+
+      function showToast(message, isSuccess = true) {
+        Swal.fire({
+          icon: isSuccess ? 'success' : 'error',
+          title: isSuccess ? 'Success!' : 'Error!',
+          text: message,
+          confirmButtonColor: isSuccess ? '#3085d6' : '#d33',
+          timer: 4000,
+          timerProgressBar: true
+        });
+      }
+
+      // Handle API response and display errors
+      function handleErrors(errorMsg) {
+        // Laravel returns only one error at a time, so we find the relevant field
+        console.log(errorMsg);
+        const lowerMsg = errorMsg.toLowerCase();
+
+        if (lowerMsg.includes("full name")) {
+          document.getElementById("full_nameError").textContent = errorMsg;
+        } else if (lowerMsg.includes("email")) {
+          document.getElementById("emailError").textContent = errorMsg;
+        } else if (lowerMsg.includes("phone")) {
+          document.getElementById("phoneError").textContent = errorMsg;
+        } else if (lowerMsg.includes("message")) {
+          document.getElementById("messageError").textContent = errorMsg;
+        } else {
+          // General fallback
+          showToast(errorMsg, false);
+        }
+      }
+
+      // Prepare and submit form data
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        clearErrors();
+
+        const formData = new FormData(form);
+        const payload = Object.fromEntries(formData.entries());
+
+        try {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin me-2"></i>Sending...`;
+
+          const response = await fetch("https://mfs.winxx777.live/api/contact/data", {
+            method: "POST",
+            headers: {
+              "Accept": "application/json"
+            },
+            body: formData
+          });
+
+          const result = await response.json();
+          console.log(result);
+          console.log(response);
+          if (response.status === 200 && result.status === true) {
+            showToast("Form submitted successfully!", true);
+            form.reset();
+          } else if (response.status === 422) {
+            handleErrors(result.message || "Please fix the errors and try again.");
+          } else {
+            showToast(result.message || "Something went wrong. Try again later.", false);
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          showToast("Network/server error. Please try again later.", false);
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = `<i class="fas fa-paper-plane me-2"></i><span>Send Message</span>`;
+        }
+      });
+    });
+  </script>
+
+  <!-- GSAP CDN -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.querySelector("#year").textContent = new Date().getFullYear();
+
+  </script>
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
